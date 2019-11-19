@@ -1,0 +1,88 @@
+Arguments: 
+  /Users/ap/.nvm/versions/node/v12.2.0/bin/node /Users/ap/.nvm/versions/node/v12.2.0/bin/yarn
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/ap/.nvm/versions/node/v12.2.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/ap/anaconda3/bin:/Users/ap/anaconda3/condabin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/ap/.nvm/versions/node/v12.2.0/bin:/Users/ap/Documents/flutter/bin:/Users/ap/Library/Android/sdk/platform-tools:/Users/ap/Library/Android/sdk/tools:/usr/local/MongoDB/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin/python3:/Users/ap/Documents/flutter/bin:/Users/ap/.nvm/versions/node/v12.2.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/ap/anaconda3/bin:/Users/ap/anaconda3/condabin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/ap/.nvm/versions/node/v12.2.0/bin:/Users/ap/Documents/flutter/bin:/Users/ap/Library/Android/sdk/platform-tools:/Users/ap/Library/Android/sdk/tools:/usr/local/MongoDB/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin/python3:/Users/ap/Library/Android/sdk/platform-tools:/Users/ap/Library/Android/sdk/tools:/usr/local/MongoDB/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  12.2.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/ap/Documents/srcs/cool/cool-core/package.json: Unexpected token ] in JSON at position 924
+      at JSON.parse (<anonymous>)
+      at /Users/ap/.nvm/versions/node/v12.2.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/ap/.nvm/versions/node/v12.2.0/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /Users/ap/.nvm/versions/node/v12.2.0/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "egg-cool-core",
+    "version": "1.0.1",
+    "description": "cool-admin 核心组件",
+    "eggPlugin": {
+      "name": "coolCore"
+    },
+    "keywords": [
+      "egg",
+      "eggPlugin",
+      "egg-plugin"
+    ],
+    "dependencies": {
+      "egg-ts-typeorm": "^1.1.12"
+    },
+    "devDependencies": {
+      "autod": "^3.0.1",
+      "autod-egg": "^1.1.0",
+      "egg": "^2.16.0",
+      "egg-bin": "^4.11.0",
+      "egg-ci": "^1.11.0",
+      "egg-mock": "^3.21.0",
+      "eslint": "^5.13.0",
+      "eslint-config-egg": "^7.1.0"
+    },
+    "engines": {
+      "node": ">=8.0.0"
+    },
+    "scripts": {
+      "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+      "test-local": "egg-bin test",
+      "cov": "egg-bin cov",
+      "lint": "eslint .",
+      "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+      "pkgfiles": "egg-bin pkgfiles",
+      "autod": "autod"
+    },
+    "files": [
+      "app.js",
+      "agent.js",
+      "config",
+      "app",
+      "lib",
+    ],
+    "ci": {
+      "version": "8, 10"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/apgzs/egg-cool-base.git"
+    },
+    "bugs": {
+      "url": "https://github.com/apgzs/egg-cool-base/issues"
+    },
+    "homepage": "https://github.com/apgzs/egg-cool-base#readme",
+    "author": "cool-admin.com",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
