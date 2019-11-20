@@ -35,7 +35,7 @@ function Cache(config) {
             } else {
                 let result = await originalFunction.apply(this, args);
                 let data = {
-                    data: resul
+                    data: result
                 };
                 this.ctx.app.redisSet(key, JSON.stringify(data), config.ttl);
                 return result
